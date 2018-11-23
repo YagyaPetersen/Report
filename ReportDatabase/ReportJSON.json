@@ -1,0 +1,581 @@
+==========================
+GET All Students
+==========================
+
+URL: http://www.OrangeHigh.com/api/student/all (GET)
+
+Request: [empty]
+
+Response: {
+ "Responses":[
+	{
+	  "id": "1",
+	  "FName": "Yagya",
+	  "LName": "Petersen",
+	  "GradeId": "1"
+	},
+	{
+	  "id": "2",
+	  "FName": "John",
+	  "LName": "Johnson",
+	  "GradeId": "2"
+	}
+	{
+	  "id": "3",
+	  "FName": "Jack",
+	  "LName": "Jackson",
+	  "GradeId": "1"
+	},
+	{
+	  "id": "4",
+	  "FName": "Bill",
+	  "LName": "Billson",
+	  "GradeId": "3"
+	}
+ ]
+}
+}
+
+==========================
+GET Student info
+==========================
+
+URL: http://www.OrangeHigh.com/api/student/{id} (GET)
+
+Request: [empty]
+
+Response: {
+	"id": "1",
+	"FName": "Yagya",
+	"LName": "Petersen",
+	"GradeId": "1"
+}
+
+==========================
+POST Student info
+==========================
+
+URL: http://www.OrangeHigh.com/api/student (POST)
+
+Request: {
+	"FName": "John",
+	"LName": "Johnson",
+	"GradeId": "2"
+}
+
+Response: {
+	"id": "2",
+	"FName": "John",
+	"LName": "Johnson",
+	"GradeId": "2"
+}
+
+==========================
+POST Student info
+==========================
+
+URL: http://www.OrangeHigh.com/api/student/{id} (PUT)
+
+Request: {
+	"id": "3",
+	"FName": "Jack",
+	"LName": "Jackson",
+	"GradeId": "1"
+}
+
+Response: {
+	"id": "3",
+	"FName": "Jack",
+	"LName": "Jackson",
+	"GradeId": "1"
+}
+
+======================================================================
+
+==========================
+GET All Teacher info
+==========================
+
+URL: http://www.OrangeHigh.com/api/teacher/all (GET)
+
+Request: [empty]
+
+Response: {
+ "Responses": [
+	{
+	 "id": "1",
+	 "FName": "June",
+	 "LName": "Juniper"
+	},
+	{
+	 "id": "2",
+	 "FName": "Rob",
+	 "LName": "Robertson"
+	},
+	{
+	 "id": "3",
+	 "FName": "Rick",
+	 "LName": "Richardson"
+	},
+	{
+	 "id": "4",
+	 "FName": "Mike",
+	 "LName": "Micheals"
+	},
+	{
+	 "id": "5",
+	 "FName": "Jim",
+	 "LName": "Carrey"
+	},
+	{
+	 "id": "6",
+	 "FName": "Eric"
+	 "LName": "Foreman"
+	},
+	{
+	 "id": "7",
+	 "FName": "Samuel"
+	 "LName": "Jackson"
+	}
+ ]
+}
+
+==========================
+GET Teacher info
+==========================
+
+URL: http://www.OrangeHigh.com/api/teacher/{id} (GET)
+
+Request: [empty]
+
+Response: {
+	"id": "1",
+	"FName": "June",
+	"LName": "Juniper"
+}
+
+==========================
+POST Teacher info
+==========================
+
+URL: http://www.OrangeHigh.com/api/teacher (POST)
+
+Request: {
+	 "FName": "Rob",
+	 "LName": "Robertson"
+}
+
+Response: {
+	 "id": "2",
+	 "FName": "Rob",
+	 "LName": "Robertson"
+}
+
+
+==========================
+PUT Teacher info
+==========================
+
+URL: http://www.OrangeHigh.com/api/teacher/{id} (PUT)
+
+Request: {
+	 "id": "3",
+	 "FName": "Rick",
+	 "LName": "Richardson"
+}
+
+Response:{
+	 "id": "3",
+	 "FName": "Rick",
+	 "LName": "Richardson"
+}
+
+======================================================================
+
+==========================
+GET All Grades
+==========================
+
+URL: http://www.OrangeHigh.com/api/grade/all (GET)
+
+Request: [empty]
+
+Response:{
+ "Response":[
+	{
+	 "id": "1",
+	 "grade": "12"
+	},
+	{
+	 "id": "2",
+	 "grade": "9"
+	},
+	{
+	 "id": "3",
+	 "grade": "10"
+	}
+}
+
+
+==========================
+GET Grade
+==========================
+
+URL: http://www.OrangeHigh.com/api/grade/{id} (GET)
+
+Request: [empty]
+
+Response:{
+	"id": "1",
+	 "grade": "12"
+}
+
+==========================
+POST Grade
+==========================
+
+URL: http://www.OrangeHigh.com/api/grade (POST)
+
+Request: {
+	"grade": "9"
+}
+
+Response: {
+	"id": "2",
+	 "grade": "9"
+}
+
+
+==========================
+PUT Grade
+==========================
+
+URL: http://www.OrangeHigh.com/api/grade/{id} (PUT)
+
+Request: {
+	"id": "3",
+	"grade": "10"
+}
+
+Response: {
+	"id": "3",
+	"grade": "10"
+}
+
+
+======================================================================
+
+==========================
+GET All Terms
+==========================
+
+URL: http://www.OrangeHigh.com/api/term (GET)
+
+Request: [empty]
+
+Response: {
+ "Responses":[
+	{
+	 "id": "1",
+	 "term": "1"
+	},
+	{
+	 "id": "2",
+	 "term": "2"
+	},
+	{
+	 "id": "3",
+	 "term": "3"
+	},
+	{
+	 "id": "4",
+	 "term": "4"
+	}
+}
+
+==========================
+GET Term
+==========================
+
+URL: http://www.OrangeHigh.com/api/term/{id} (GET)
+
+Request: [empty]
+
+Response:{
+	 "id": "1",
+	 "term": "1"
+}
+
+==========================
+POST Term
+==========================
+
+URL: http://www.OrangeHigh.com/api/term (POST)
+
+Request: {
+	"term": "2"
+}
+
+Response: {
+	"id": "2",
+	"term": "2"
+}
+
+==========================
+PUT Term
+==========================
+
+URL: http://www.OrangeHigh.com/api/term/{id} (PUT)
+
+Request: {
+	"id": "3",
+	"term": "3"
+}
+Response: {
+	"id": "3",
+	"term": "3"
+}
+
+======================================================================
+
+==========================
+GET All Subject
+==========================
+
+URL: http://www.OrangeHigh.com/api/Subject/all (GET)
+
+Request: [empty]
+
+Response: {
+ "Responses":[
+	{
+	 "id": "1",
+	 "SubjectName": "Maths"
+	},
+	{
+	 "id": "2",
+	 "SubjectName": "IT"
+	},
+	{
+	 "id": "3",
+	 "SubjectName": "English"
+	},
+	{
+	 "id": "4",
+	 "SubjectName": "Physics"
+	},
+	{
+	 "id": "5",
+	 "SubjectName": "Afrikaans"
+	},
+	{
+	 "id": "6",
+	 "SubjectName": "Life Orientation"
+	},
+	{
+	 "id": "7",
+	 "SubjectName": "History"
+	}
+ ]
+}
+
+==========================
+GET Subject
+==========================
+
+URL: http://www.OrangeHigh.com/api/Subject/{id} (GET)
+
+Request: [empty]
+
+Response: {
+	"id": "1",
+	"SubjectName": "Maths"
+}
+
+==========================
+POST Subject
+==========================
+
+URL: http://www.OrangeHigh.com/api/Subject (POST)
+
+Request: {
+	"SubjectName": "IT"
+}
+
+Response: {
+	"id": "2",
+	"SubjectName": "IT"
+}
+
+==========================
+PUT Subject
+==========================
+
+URL: http://www.OrangeHigh.com/api/Subject/{id} (PUT)
+
+Request: {
+	"id": "3"
+	"SubjectName": "English"
+}
+Response: {
+	"id": "3",
+	"SubjectName": "English"
+}
+
+======================================================================
+
+==========================
+GET All Reports
+==========================
+
+URL: http://www.OrangeHigh.com/api/report/all (GET)
+
+Request: [empty]
+
+Response: {
+ "Responses":[
+	{
+	 "id": "1",
+	 "SubjectId": "1",
+	 "TeacherId": "1",
+	 "MarkType": "1"
+	},
+	{
+	 "id": "2",
+	 "SubjectId": "2",
+	 "TeacherId": "2",
+	 "MarkType": "2"
+	},
+	{
+	 "id": "3",
+	 "SubjectId": "3",
+	 "TeacherId": "3",
+	 "MarkType": "3"
+	},
+	{
+	 "id": "4",
+	 "SubjectId": "4",
+	 "TeacherId": "4",
+	 "MarkType": "4"
+	},
+	{
+	 "id": "5",
+	 "SubjectId": "5",
+	 "TeacherId": "5",
+	 "MarkType": "5"
+	},
+	{
+	 "id": "6",
+	 "SubjectId": "6",
+	 "TeacherId": "6",
+	 "MarkType": "6"
+	},
+	{
+	 "id": "7",
+	 "SubjectId": "7",
+	 "TeacherId": "7",
+	 "MarkType": "7"
+	}
+ ]
+}
+
+==========================
+GET Report
+==========================
+
+URL: http://www.OrangeHigh.com/api/report/{id} (GET)
+
+Request: [empty]
+
+Response: {
+	"id": "1",
+	"SubjectId": "1",
+	"TeacherId": "1",
+	"MarkType": "1"
+}
+
+==========================
+POST Report
+==========================
+
+URL: http://www.OrangeHigh.com/api/report (POST)
+
+Request: {
+	"SubjectId": "2",
+	"TeacherId": "2",
+	 "MarkType": "2"
+}
+Response: {
+	"id": "2",
+	"SubjectId": "2",
+	"TeacherId": "2",
+	"MarkType": "2"
+}
+
+==========================
+POST Report
+==========================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
